@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "agentdomain-mcp"
+version = "1.1.0"
+description = "MCP server for AgentDomain — register, buy, and manage domains as an AI agent"
+readme = "README.md"
+license = "MIT"
+requires-python = ">=3.10"
+authors = [
+    { name = "AgentDomain", email = "hello@agentdomain.cloud" }
+]
+keywords = ["mcp", "domain", "registration", "cloudflare", "ai-agent"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Internet :: Name Service (DNS)",
+]
+dependencies = [
+    "mcp>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.scripts]
+agentdomain-mcp = "agentdomain_mcp.server:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["agentdomain_mcp"]
