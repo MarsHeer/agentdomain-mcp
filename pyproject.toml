@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "agentdomain-mcp"
-version = "1.1.0"
+version = "1.1.1"
 description = "MCP server for AgentDomain — register, buy, and manage domains as an AI agent"
 readme = "README.md"
 license = "MIT"
