@@ -1,3 +1,5 @@
+<!-- mcp-name: cloud.agentdomain/agentdomain-mcp -->
+
 # AgentDomain MCP Server
 
 MCP server for [AgentDomain](https://agentdomain.cloud) — register, buy, and manage internet domains as an AI agent.
